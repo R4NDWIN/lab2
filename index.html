@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js"></script>
+
+    <title>Прогноз погоды</title>
+</head>
+
+<body>
+    <header>
+        <ol>
+            <li onclick="getData(this);" data-cityId="571476" id="Bryansk">Брянск</li>
+            <li onclick="getData(this);" data-cityId="524901" id="Moscow">Москва</li>
+            <li onclick="getData(this);" data-cityId="703448" id="Kiev">Киев</li>
+            <li onclick="getData(this);" data-cityId="625144" id="Minsk">Минск</li>
+            <li onclick="getData(this);" data-cityId="488852" id="Starodub">Стародуб</li>
+        </ol>
+    </header>
+    <div id="weather">
+        <div id="cityName">Брянск</div>
+        <img id="weatherImage" src="http://openweathermap.org/img/wn/04d@2x.png" alt="Состояние погоды">        
+        <p id="degrees">0 &deg;C</p>
+        <div id="weatherTextData">            
+            <p id="pressure">Давление: 0 мм.рт.ст.</p>
+            <p id="windSpeed">Скорость ветра: 0 м/с</p>
+            <p id="humidity">Влажность: 0%</p>            
+        </div>
+        <div id="update" onclick="update();">Обновить данные</div>
+    </div>    
+</body>
+
+</html>
